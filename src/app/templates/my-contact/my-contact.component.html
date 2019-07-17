@@ -5,7 +5,7 @@
               <div class="card">
                   <h5 class="card-header">Contact Form</h5>
                   <div class="card-body">
-                      <form class="contact__form" method="post"> <!-- action="mail.php" -->
+                      <form class="contact__form" (submit)="contactUser($event)">
                           
                           <!-- form message -->
                           <div class="row">
@@ -20,19 +20,19 @@
                           <!-- form element -->
                           <div class="row">
                               <div class="col-md-6 form-group">
-                                  <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                  <input name="name" type="text" class="form-control" placeholder="Name" id="name" required>
                               </div>
                               <div class="col-md-6 form-group">
-                                  <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                  <input name="email" type="email" class="form-control" placeholder="Email" id="email" required>
                               </div>
                               <div class="col-md-6 form-group">
-                                  <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                                  <input name="phone" type="text" class="form-control" placeholder="Phone" id="phone" required>
                               </div>
                               <div class="col-md-6 form-group">
-                                  <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                                  <input name="subject" type="text" class="form-control" placeholder="Subject" id="subject" required>
                               </div>
                               <div class="col-12 form-group">
-                                  <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                                  <textarea name="message" class="form-control" rows="3" placeholder="Message" id="mailmessage" required></textarea>
                               </div>
                               <div class="col-12">
                                   <input name="submit" type="submit" class="btn btn-success" value="Send Message">
