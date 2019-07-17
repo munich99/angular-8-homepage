@@ -13,7 +13,7 @@ export class ServiceMailService {
 
   contactUserdetails( name, email, phone, subject, mailmessage) {
     // post these details to BACKEND server return user info if correct
-    return this.http.post<myData>('http://web600.serverdrome.eu/api/auth.php',{
+    return this.http.post<myData>('http://fake-mail',{
       name, email, phone, subject, mailmessage
     })
 
