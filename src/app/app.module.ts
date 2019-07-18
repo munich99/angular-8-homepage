@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http' ;
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { MyFooterComponent } from './allways/my-footer/my-footer.component';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +30,9 @@ import { MyFooterComponent } from './allways/my-footer/my-footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-    
+    HttpClientModule    
   ],
-  providers: [ServiceMailService],
+  providers: [ServiceMailService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

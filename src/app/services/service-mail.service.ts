@@ -13,7 +13,7 @@ export class ServiceMailService {
 
   contactUserdetails( name, email, phone, subject, mailmessage) {
     // post these details to BACKEND server return user info if correct
-    return this.http.post<myData>('http://fake-mail',{
+    return this.http.post<myData>('./api/auth.php',{
       name, email, phone, subject, mailmessage
     })
 
