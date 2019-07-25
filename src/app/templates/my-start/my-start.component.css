@@ -1,8 +1,35 @@
 h1 {font-size:17.5vw; line-height: 85%; font-weight: bold; text-align: right;}
 
-h2 {max-width: 60%; line-height: 115%; margin: 10vh 0 20vh 2vh;}
+h2 {line-height: 115%; margin: 5vh 0 20vh 0; padding: 0}
 
 :first-of-type {text-align: left;}
 
+/* .shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
 
+*/
 
+/* Font Size */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  
+   }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+   
+  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+   h2 {font-size: 3rem }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   
+ }
