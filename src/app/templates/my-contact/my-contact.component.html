@@ -1,48 +1,61 @@
-<section style="margin-top: 50px;">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-md-8">
-              <div class="card">
-                  <h5 class="card-header">Contact Form</h5>
-                  <div class="card-body">
-                      <form class="contact__form" (submit)="contactUser($event)">
-                          
-                          <!-- form message -->
-                          <div class="row">
-                              <div class="col-12">
-                                  <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                      Your message was sent successfully.
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- end message -->
+<section style="margin-top: 1em; margin-bottom: 1em;">
+    <h1 >Contact</h1>
+    <div class="row">
+        <h1 class="col-lg-6 d-inline-block">Form</h1>
+        <div class="col-lg-6 d-inline-block py-md-5">
+            
 
-                          <!-- form element -->
-                          <div class="row">
-                              <div class="col-md-6 form-group">
-                                  <input name="name" type="text" class="form-control" placeholder="Name" id="name" required>
-                              </div>
-                              <div class="col-md-6 form-group">
-                                  <input name="email" type="email" class="form-control" placeholder="Email" id="email" required>
-                              </div>
-                              <div class="col-md-6 form-group">
-                                  <input name="phone" type="text" class="form-control" placeholder="Phone" id="phone" required>
-                              </div>
-                              <div class="col-md-6 form-group">
-                                  <input name="subject" type="text" class="form-control" placeholder="Subject" id="subject" required>
-                              </div>
-                              <div class="col-12 form-group">
-                                  <textarea name="message" class="form-control" rows="3" placeholder="Message" id="mailmessage" required></textarea>
-                              </div>
-                              <div class="col-12">
-                                  <input name="submit" type="submit" class="btn btn-success" value="Send Message">
-                              </div>
-                          </div>
-                          <!-- end form element -->
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <h5 class="card-header">Get in Touch</h5>
+                            <div class="card-body">
+                                <form class="contact__form" (submit)="contactUser($event)">
+                                    
+                                    <!-- form message -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                                Your message was sent successfully.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end message -->
+          
+                                    <!-- form element -->
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <input name="name" type="text" class="form-control" placeholder="Name" id="name" required>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <input name="email" type="email" class="form-control" placeholder="Email" id="email" required>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <input name="phone" type="text" class="form-control" placeholder="Phone" id="phone" required>
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <input name="subject" type="text" class="form-control" placeholder="Subject" id="subject" required>
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <textarea name="message" class="form-control" rows="3" placeholder="Message" id="mailmessage" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                                        </div>
+                                    </div>
+                                    <!-- end form element -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+
+            <!--p style="float: right">dsg</p>-->
+        </div>
+ 
+    </div>
 </section>
+
+
+
