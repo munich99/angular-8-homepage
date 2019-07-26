@@ -10,3 +10,15 @@
 .navbar-light .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.5);
 }
+
+.dropdown-menu {
+    left:auto;
+    right:1em;
+    background-color: rgb(250, 167, 73);
+}
+
+a       { color:  rgb(250, 167, 73) }
+a:hover { color:  rgba(250, 167, 73, 0.5) }
+
+.dropdown-menu a    { color:#333 }
+
