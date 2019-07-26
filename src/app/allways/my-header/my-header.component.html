@@ -2,25 +2,17 @@
 
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLinkActive="active" routerLink="start">About Me</a>
+      <li *ngFor="let aufzahlung of navigation" class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="{{aufzahlung.ziel}}">{{aufzahlung.navi}}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link"  routerLinkActive="active" routerLink="contact">Contact Me</a>
-      </li>
-    </ul>
-    
+    </ul>    
       
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown" s>
-        <a class="dropdown-item" href="#">English</a>
-        <a class="dropdown-item" href="#">Deutsch</a>
-
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span *ngIf="changeLanguage">English</span>
+        <span *ngIf="!changeLanguage">Deutsch</span></a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" (click)="changeLanguage=true">English</a>
+        <a class="dropdown-item" (click)="changeLanguage=false">Deutsch</a>
       </div>
-    
   </div>
 </nav>
-
-
-
-
