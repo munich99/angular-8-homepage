@@ -1,5 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="collapse navbar-collapse" id="navbarText">
+  
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li *ngFor="let aufzahlung of navigation" class="nav-item">
         <a class="nav-link" routerLinkActive="active" routerLink="{{aufzahlung.ziel}}">
@@ -7,15 +12,19 @@
           <span *ngIf="!changeLanguage">{{aufzahlung.navi_deutsch}}</span>
         </a>
       </li>
-    </ul>    
+    </ul>
       
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span *ngIf="changeLanguage">English</span>
-      <span *ngIf="!changeLanguage">Deutsch</span>
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" (click)="nextCount()">English</a>
-      <a class="dropdown-item" (click)="nextCount()">Deutsch</a>
-    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span *ngIf="changeLanguage">English</span>
+          <span *ngIf="!changeLanguage">Deutsch</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" (click)="nextCount()">English</a>
+          <a class="dropdown-item" (click)="nextCount()">Deutsch</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </nav>
