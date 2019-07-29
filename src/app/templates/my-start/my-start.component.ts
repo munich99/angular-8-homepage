@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceLanguageService } from '../../services/service-language.service';
 
 @Component({
   selector: 'app-my-start',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyStartComponent implements OnInit {
 
-  constructor() { }
+  changeLanguage:boolean;
+
+  constructor(private servicelanguageservice:ServiceLanguageService) {   }
 
   ngOnInit() {
+    this.servicelanguageservice.changeLanguage.subscribe(c => {
+      this.changeLanguage = c;
+    })
+  }
+
+  nextCount(){
+    this.servicelanguageservice.nextCount();
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { navigation } from './navi'
+import { ServiceLanguageService } from '../../services/service-language.service';
 
 @Component({
   selector: 'app-my-header',
@@ -9,11 +10,18 @@ import { navigation } from './navi'
 export class MyHeaderComponent implements OnInit {
 
   navigation = navigation;
+  changeLanguage: boolean;
 
-  constructor() { }
+  constructor(private servicelanguageservice:ServiceLanguageService ) { }
 
   ngOnInit() {
+    this.servicelanguageservice.changeLanguage.subscribe(c =>{
+      this.changeLanguage = c;
+    })
   }
-
-  changeLanguage:boolean=true;
+  
+  nextCount(){
+    this.servicelanguageservice.nextCount();
+  }
+  
 }
