@@ -1,8 +1,8 @@
 h1 {font-size:17.5vw; line-height: 85%; font-weight: bold; text-align: right;}
 
-h2 {line-height: 115%; margin: 5vh 0 20vh 0; padding: 0}
+h2 {line-height: 115%; margin: 5vh 0 5vh 0; padding: 0}
 
-:first-of-type {text-align: left;}
+:first-of-type {text-align: left; }
 
 .cards {
   width: 90vw;
@@ -13,14 +13,31 @@ h2 {line-height: 115%; margin: 5vh 0 20vh 0; padding: 0}
 
 .card1 {background-color: rgb(42, 165, 58);}
 
-
-/* .shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+.pic-start {
+  margin: 5vh;
+  opacity:0.75;
+ 
 }
 
-*/
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  -moz-box-shadow:    inset 10px 0 30px #333;
+  -webkit-box-shadow: inset 10px 0 30px #333;
+  box-shadow:         inset 10px 0 30px #333;    
+}
+
+
+ .shadow {
+
+  height: auto;
+  width:100%;
+}
+
+
 
 /* Font Size */
 

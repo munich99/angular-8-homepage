@@ -1,22 +1,28 @@
 <section>    
-  <h1>
+  <h1 class="d-inline mx-3 my-0">
     <span @fadeIn *ngIf="changeLanguage">HELLO.</span><span @fadeIn *ngIf="!changeLanguage">HALLO.</span>
   </h1>    
   <h1>
-    <span @fadeIn *ngIf="changeLanguage">I'M</span><span @fadeIn *ngIf="!changeLanguage">ICH BIN</span> SEBASTIAN SAWICZ
+    <span @fadeIn *ngIf="changeLanguage">I'M</span><span @fadeIn *ngIf="!changeLanguage">ICH BIN</span><span @fadeIn> SEBASTIAN SAWICZ</span>
     
   </h1>
-
-          <h2 class="col-xl-5 col-lg-7 col-md-8 col-sm-10 col-12">
-              <span @fadeIn *ngIf="changeLanguage">I'm a multi-talented human.
-              Most of my time I design and build digital products. 
-              You can also call me a web designer, screen designer, interaction, UI, UX or by any other market defined function-title.
-              I'm also a multi-disciplinary maker with over 15 years of experiences in wide range of design disciplines, front-end developer, illustrator, traveler, beautifier and more.</span>
-            <span @fadeIn *ngIf="!changeLanguage">Ich bin ein vielseitig-kreativer Mensch.
-            Die meiste Zeit verbringe ich mit grafischem Gestalten und digitaler Produktion.
-            Sie können mich auch als Webdesinger, Layouter, Programmierer und Gestalter nutzerorientierter Interaktionen, UI, UX nennen oder sonstiger marküblicher Funktionstiteln dafür benutzen.
-            Ich bin einfach ein interdisziplinärer Kreativer, mit über 15 Jahren Erfahrung in den weiten Gebieten des Designs; FrontEnd-Entwickler, Illustrator, Weltenbummler, Verschönerer und noch viel mehr.</span>
-          </h2>
+  <div class="row my-0 mx-0">
+    <h2 class="col-lg-7 col-md-6 col-12">
+        <span @fadeIn *ngIf="changeLanguage">I'm a multi-talented human.
+        Most of my time I design and build digital products. 
+        You can also call me a web designer, screen designer, interaction, UI, UX or by any other market defined function-title.
+        I'm also a multi-disciplinary maker with over 15 years of experiences in wide range of design disciplines, front-end developer, illustrator, traveler, beautifier and more.</span>
+      <span @fadeIn *ngIf="!changeLanguage">Ich bin ein vielseitig-kreativer Mensch.
+      Die meiste Zeit verbringe ich mit grafischem Gestalten und digitaler Produktion.
+      Sie können mich auch als Webdesinger, Layouter, Programmierer und Gestalter nutzerorientierter Interaktionen, UI, UX nennen oder sonstiger marküblicher Funktionstiteln dafür benutzen.
+      Ich bin einfach ein interdisziplinärer Kreativer, mit über 15 Jahren Erfahrung in den weiten Gebieten des Designs; FrontEnd-Entwickler, Illustrator, Weltenbummler, Verschönerer und noch viel mehr.</span>
+    </h2>
+    <div class="col-lg-5 col-md-6 col-12 pic-start mx-0"> 
+      <div style="position: relative;">
+        <div class="overlay"></div>
+        <img class="shadow"  src="../../../assets/pics/ich-dev3.png"/>
+      </div>
+    </div>
+</div>
 </section>
 
-<!--img class="shadow" src="../../../assets/pics/ich.jpg"/>-->
