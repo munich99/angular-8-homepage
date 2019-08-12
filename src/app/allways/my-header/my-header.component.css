@@ -15,6 +15,7 @@
     left:auto;
     right:1em;
     background-color: rgb(250, 167, 73);
+    cursor: pointer;
 }
 
 a       { color:  rgb(250, 167, 73) }
