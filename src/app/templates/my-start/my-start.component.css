@@ -1,8 +1,6 @@
-h1 {font-size:17.5vw; line-height: 85%; font-weight: bold; text-align: right;}
+h1 {font-size:17vw; line-height: 85%; font-weight: bold;}
 
-h2 {line-height: 115%; margin: 5vh 0 5vh 0; padding: 0}
-
-:first-of-type {text-align: left; }
+h2 {font-size:8vw; line-height: 115%; margin-top: -1vh!important}
 
 .cards {
   width: 90vw;
