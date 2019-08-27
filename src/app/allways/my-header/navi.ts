@@ -11,5 +11,12 @@ export const navigation=[
         ziel: "contact",
         id: 2
       }
-
+ /*
+      {
+        navi: "your request",
+        navi_deutsch: "dein Anliegen",
+        ziel: "request",
+        id: 3
+      }
+       */
   ]
