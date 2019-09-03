@@ -1,28 +1,28 @@
 <footer class="p-3 bg-dark text-white-50">
-  <h5 class="text-white">Sitemap</h5>
+  <h5 class="text-white text-md-center text-lg-left">Sitemap</h5>
     <div class="row">
       
-      <ul class="list-group col-2 navbar-nav pl-3">
+      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav">
           <li *ngFor="let aufzahlung of navigation">
-              <a class="list-group-item list-group-item-action" routerLink="{{aufzahlung.ziel}}">
+              <a class="list-group-item list-group-item-action pl-3" routerLink="{{aufzahlung.ziel}}">
                   <span *ngIf="changeLanguage">{{aufzahlung.navi}}</span>
                   <span *ngIf="!changeLanguage">{{aufzahlung.navi_deutsch}}</span>
               </a>
           </li>
       </ul>
 
-      <ul class="list-group col-2 navbar-nav pl-3">
+      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-center text-lg-left">
           <li *ngFor="let aufzahlung of sitemap">
-              <a href="#" class="list-group-item list-group-item-action disabled">
+              <a href="#" class="list-group-item list-group-item-action disabled pl-3">
                   <span *ngIf="changeLanguage">{{aufzahlung.site}}</span>
                   <span *ngIf="!changeLanguage">{{aufzahlung.site_de}}</span>
               </a>
           </li>
       </ul>
 
-      <ul class="list-group col-2 navbar-nav pl-3">
+      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-right text-lg-left">
           <li *ngFor="let aufzahlung of law">
-              <a href="#" class="list-group-item list-group-item-action disabled">
+              <a href="#" class="list-group-item list-group-item-action disabled pl-3">
                   <span *ngIf="changeLanguage">{{aufzahlung.rechtliches}}</span>
                   <span *ngIf="!changeLanguage">{{aufzahlung.rechtliches_de}}</span>
               </a>
@@ -34,7 +34,7 @@
   </div>
 
 
-
+<hr>
 
   <div class="container text-center">
     <small>Copyright &copy; Sebastian Sawicz</small>
