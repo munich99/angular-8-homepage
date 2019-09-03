@@ -1,0 +1,12 @@
+/* .list-group-item {background-color: transparent} */
+
+.list-group-item {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border: none;
+}
+
+.list-group-item:hover {
+
+    color: rgba(255, 255, 255, 0.7);
+}
