@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { navigation } from '../my-header/navi';
 import { sitemap } from './sitemap';
+import { law } from './law';
 import { ServiceLanguageService } from '../../services/service-language.service';
 
 @Component({
@@ -12,6 +13,7 @@ export class MyFooterComponent implements OnInit {
 
   navigation = navigation;
   sitemap = sitemap;
+  law = law;
   changeLanguage: boolean;
 
   constructor(private servicelanguageservice:ServiceLanguageService ) { }
