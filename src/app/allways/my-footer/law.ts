@@ -2,8 +2,9 @@ export const law = [
     {
         rechtliches: "imprint",
         rechtliches_de: "impressum",
-        inhalt:"adresse bla bla",
-        id: 1
+        id: 1,
+        inhalt: "<h2 #h2Elm>I am h2</h2>",
+        
     },
     {
         rechtliches: "disclaimer",

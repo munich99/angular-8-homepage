@@ -22,8 +22,8 @@
 
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-right text-lg-left">
           <li *ngFor="let aufzahlung of law">
-              <a href="#" class="list-group-item list-group-item-action disabled pl-3">
-                  <span *ngIf="changeLanguage">{{aufzahlung.rechtliches}}</span>
+              <a href="#" class="list-group-item list-group-item-action pl-3">
+                  <span *ngIf="changeLanguage" (click)="openModal(template, modalContent)">{{aufzahlung.rechtliches}}</span>
                   <span *ngIf="!changeLanguage">{{aufzahlung.rechtliches_de}}</span>
               </a>
           </li>
@@ -33,7 +33,7 @@
 
   </div>
 
-  <button type="button" class="btn btn-primary" (click)="openModal(template)">Open modal</button>
+  <button type="button" class="btn btn-primary">Open modal</button>
 <br>
  
 <ng-template #template>
@@ -44,7 +44,7 @@
     </button>
   </div>
   <div class="modal-body">
-    <p>{{law[0].inhalt}}</p>
+        <div [innerHTML]="law[0].inhalt"></div>
   </div>
 </ng-template>
 

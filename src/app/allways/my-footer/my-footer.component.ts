@@ -20,7 +20,10 @@ export class MyFooterComponent implements OnInit {
   modalRef: BsModalRef;
   items: any[];
 
-  constructor(private servicelanguageservice:ServiceLanguageService, private modalService: BsModalService ) { 
+  constructor(
+    private servicelanguageservice:ServiceLanguageService,
+    private modalService: BsModalService 
+    ) { 
     this.items = Array(15).fill(0);
   }
 
@@ -30,12 +33,15 @@ export class MyFooterComponent implements OnInit {
     })
   }
 
-  openModal(template: TemplateRef<any>) {
+  openModal(template: TemplateRef<any>, modalContent) {
+    modalContent = "gg";
     this.modalRef = this.modalService.show(template);
   }
   
   nextCount(){
     this.servicelanguageservice.nextCount();
   }
+
+  comment: string = "<p><em><strong>abc</strong></em></p>";
 
 }
