@@ -1,4 +1,4 @@
-<footer class="p-3 bg-dark text-white-50">
+<footer class="p-3 bg-dark text-white-50">  {{law[0].inhalt}}
   <h5 class="text-white text-md-center text-lg-left">Sitemap</h5>
     <div class="row">
       
@@ -44,8 +44,7 @@
     </button>
   </div>
   <div class="modal-body">
-    <p *ngFor="let item of items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque delectus enim esse excepturi, impedit,
-      iste magnam officia optio, quam quis quisquam saepe sint unde velit vitae! Animi in iusto ut?</p>
+    <p>{{law[0].inhalt}}</p>
   </div>
 </ng-template>
 

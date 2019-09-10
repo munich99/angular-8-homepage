@@ -14,7 +14,7 @@ export class MyFooterComponent implements OnInit {
 
   navigation = navigation;
   sitemap = sitemap;
-  law = law;
+  law = law; 
   changeLanguage: boolean;
 
   modalRef: BsModalRef;
