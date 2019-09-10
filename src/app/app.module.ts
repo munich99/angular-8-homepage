@@ -14,6 +14,7 @@ import { MyContactComponent } from './templates/my-contact/my-contact.component'
 
 import { MyHeaderComponent } from './allways/my-header/my-header.component';
 import { MyFooterComponent } from './allways/my-footer/my-footer.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 
@@ -33,7 +34,8 @@ import { MyFooterComponent } from './allways/my-footer/my-footer.component';
     AppRoutingModule,
     HttpClientModule ,
     BrowserModule,
-    BrowserAnimationsModule   
+    BrowserAnimationsModule,
+    ModalModule.forRoot()   
   ],
   providers: [ServiceMailService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
