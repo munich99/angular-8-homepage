@@ -1,16 +1,16 @@
 export const law = [
     {
         rechtliches: "imprint",
-        rechtliches_de: "impressum",
+        rechtliches_de: "Impressum",
         id: 1,   
     },
     {
         rechtliches: "disclaimer",
-        rechtliches_de: "disclaimer",
+        rechtliches_de: "Disclaimer",
         id: 2
     },
     {
-        rechtliches: "Privacy Policy",
+        rechtliches: "privacy policy",
         rechtliches_de: "Datenschutz",
         id: 3
     }

@@ -12,5 +12,10 @@ export const sitemap = [
     {
         site: "vector graphic",
         site_de: "vektor grafik"
-    }
+    },
+    {
+        site: "coding skills",
+        site_de: "Programmier Kenntnisse",
+        id:4
+    },
 ]

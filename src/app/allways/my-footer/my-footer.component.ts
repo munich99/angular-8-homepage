@@ -20,6 +20,9 @@ export class MyFooterComponent implements OnInit {
   modalRef: BsModalRef;
   items: any[];
 
+  rechtliches: string;
+  rechtliches_de: string;
+
   constructor(
     private servicelanguageservice:ServiceLanguageService,
     private modalService: BsModalService 
@@ -34,7 +37,9 @@ export class MyFooterComponent implements OnInit {
   }
 
   openModal(template: TemplateRef<any>, modalContent) {
-    modalContent = "gg";
+    this.rechtliches = modalContent.rechtliches;
+    this.rechtliches_de = modalContent.rechtliches_de;
+    console.log(this.rechtliches_de);
     this.modalRef = this.modalService.show(template);
   }
   

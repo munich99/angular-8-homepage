@@ -12,19 +12,19 @@
       </ul>
 
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-center text-lg-left">
-          <li *ngFor="let aufzahlung of sitemap">
-              <a href="#" class="list-group-item list-group-item-action disabled pl-3">
+          <li *ngFor="let aufzahlung of sitemap">&nbsp;
+              <!--a href="#" class="list-group-item list-group-item-action disabled pl-3">
                   <span *ngIf="changeLanguage">{{aufzahlung.site}}</span>
                   <span *ngIf="!changeLanguage">{{aufzahlung.site_de}}</span>
-              </a>
+              </a-->
           </li>
       </ul>
 
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-right text-lg-left">
           <li *ngFor="let aufzahlung of law">
               <a href="#" class="list-group-item list-group-item-action pl-3">
-                  <span *ngIf="changeLanguage" (click)="openModal(template)">{{aufzahlung.rechtliches}}</span>
-                  <span *ngIf="!changeLanguage"  (click)="openModal(template)">{{aufzahlung.rechtliches_de}}</span>
+                  <span *ngIf="changeLanguage" (click)="openModal(template, aufzahlung)">{{aufzahlung.rechtliches}}</span>
+                  <span *ngIf="!changeLanguage"  (click)="openModal(template, aufzahlung)">{{aufzahlung.rechtliches_de}}</span>
               </a>
           </li>
       </ul>
@@ -33,6 +33,9 @@
 
   </div>
 <br>
+ 
+
+
 <ng-template #template>
   <div class="modal-header">
     <h4 class="modal-title pull-left">Modal</h4>
@@ -41,8 +44,11 @@
     </button>
   </div>
   <div class="modal-body">
-    <app-my-datenschutz *ngIf="changeLanguage"></app-my-datenschutz>   
-    <app-my-datenschutzdeutsch *ngIf="!changeLanguage"></app-my-datenschutzdeutsch>  
+      
+    <app-my-impressum *ngIf="rechtliches === 'imprint' || rechtliches_de === 'Impressum' "></app-my-impressum>
+    <app-my-datenschutz *ngIf="rechtliches === 'privacy policy' && changeLanguage "></app-my-datenschutz>   
+    <app-my-datenschutzdeutsch *ngIf="rechtliches_de === 'Datenschutz' "></app-my-datenschutzdeutsch>
+         
   </div>
 </ng-template>
 
