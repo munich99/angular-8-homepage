@@ -18,6 +18,8 @@ import { MyDatenschutzComponent } from './allways/my-footer/my-datenschutz/my-da
 import { MyDatenschutzdeutschComponent } from './allways/my-footer/my-datenschutzdeutsch/my-datenschutzdeutsch.component';
 import { MyImpressumComponent } from './allways/my-footer/my-impressum/my-impressum.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { MyDisclaimerComponent } from './allways/my-footer/my-disclaimer/my-disclaimer.component';
+import { MyDisclaimerdeutschComponent } from './allways/my-footer/my-disclaimerdeutsch/my-disclaimerdeutsch.component';
 
 
 
@@ -33,7 +35,9 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     MyFooterComponent,
     MyDatenschutzComponent,
     MyDatenschutzdeutschComponent,
-    MyImpressumComponent
+    MyImpressumComponent,
+    MyDisclaimerComponent,
+    MyDisclaimerdeutschComponent
   ],
   imports: [
     BrowserModule,

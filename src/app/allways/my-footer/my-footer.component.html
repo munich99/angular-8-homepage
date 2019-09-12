@@ -44,13 +44,15 @@
     </button>
   </div>
   <div class="modal-body">
-      
     <app-my-impressum *ngIf="rechtliches === 'imprint' || rechtliches_de === 'Impressum' "></app-my-impressum>
     <app-my-datenschutz *ngIf="rechtliches === 'privacy policy' && changeLanguage "></app-my-datenschutz>   
     <app-my-datenschutzdeutsch *ngIf="rechtliches_de === 'Datenschutz' "></app-my-datenschutzdeutsch>
-         
+    <app-my-disclaimer *ngIf="rechtliches === 'disclaimer' && changeLanguage "></app-my-disclaimer>
+    <app-my-disclaimerdeutsch *ngIf="rechtliches_de === 'Disclaimer' "></app-my-disclaimerdeutsch> 
   </div>
 </ng-template>
+
+
 
 <hr>
 
