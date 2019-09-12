@@ -23,8 +23,8 @@
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-right text-lg-left">
           <li *ngFor="let aufzahlung of law">
               <a href="#" class="list-group-item list-group-item-action pl-3">
-                  <span *ngIf="changeLanguage" (click)="openModal(template, modalContent)">{{aufzahlung.rechtliches}}</span>
-                  <span *ngIf="!changeLanguage">{{aufzahlung.rechtliches_de}}</span>
+                  <span *ngIf="changeLanguage" (click)="openModal(template)">{{aufzahlung.rechtliches}}</span>
+                  <span *ngIf="!changeLanguage"  (click)="openModal(template)">{{aufzahlung.rechtliches_de}}</span>
               </a>
           </li>
       </ul>
@@ -32,10 +32,7 @@
 
 
   </div>
-
-  <button type="button" class="btn btn-primary">Open modal</button>
 <br>
- 
 <ng-template #template>
   <div class="modal-header">
     <h4 class="modal-title pull-left">Modal</h4>
@@ -44,8 +41,8 @@
     </button>
   </div>
   <div class="modal-body">
-    <!--app-my-datenschutz></app-my-datenschutz-->
-    <app-my-datenschutzdeutsch></app-my-datenschutzdeutsch>
+    <app-my-datenschutz *ngIf="changeLanguage"></app-my-datenschutz>   
+    <app-my-datenschutzdeutsch *ngIf="!changeLanguage"></app-my-datenschutzdeutsch>  
   </div>
 </ng-template>
 
