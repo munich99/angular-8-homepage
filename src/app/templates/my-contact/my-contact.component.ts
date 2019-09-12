@@ -27,8 +27,9 @@ export class MyContactComponent implements OnInit {
 
   changeLanguage:boolean;
 
-  constructor(private Mail: ServiceMailService, private servicelanguageservice:ServiceLanguageService) { }
-  // constructor() { }
+  constructor(
+    private Mail: ServiceMailService,
+    private servicelanguageservice:ServiceLanguageService) { }  
 
   ngOnInit() {
     this.servicelanguageservice.changeLanguage.subscribe(c => {

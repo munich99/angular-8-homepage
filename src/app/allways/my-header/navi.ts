@@ -6,17 +6,16 @@ export const navigation=[
         id: 1
       },
       {
-        navi: "contact me",
+        navi: "contact",
         navi_deutsch: "Schreibe mir",
         ziel: "contact",
         id: 2
-      }
- /*
+      },
       {
-        navi: "your request",
-        navi_deutsch: "dein Anliegen",
-        ziel: "request",
+        navi: "projects",
+        navi_deutsch: "Projekte",
+        ziel: "project",
         id: 3
       }
-       */
+       
   ]

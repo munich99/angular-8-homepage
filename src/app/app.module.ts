@@ -11,13 +11,15 @@ import { ServiceMailService } from './services/service-mail.service';
 
 import { MyStartComponent } from './templates/my-start/my-start.component';
 import { MyContactComponent } from './templates/my-contact/my-contact.component';
+import { MyProjectComponent } from './templates/my-project/my-project.component';
+
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { MyHeaderComponent } from './allways/my-header/my-header.component';
 import { MyFooterComponent } from './allways/my-footer/my-footer.component';
 import { MyDatenschutzComponent } from './allways/my-footer/my-datenschutz/my-datenschutz.component';
 import { MyDatenschutzdeutschComponent } from './allways/my-footer/my-datenschutzdeutsch/my-datenschutzdeutsch.component';
 import { MyImpressumComponent } from './allways/my-footer/my-impressum/my-impressum.component';
-import { ModalModule } from 'ngx-bootstrap/modal';
 import { MyDisclaimerComponent } from './allways/my-footer/my-disclaimer/my-disclaimer.component';
 import { MyDisclaimerdeutschComponent } from './allways/my-footer/my-disclaimerdeutsch/my-disclaimerdeutsch.component';
 
@@ -31,6 +33,7 @@ import { MyDisclaimerdeutschComponent } from './allways/my-footer/my-disclaimerd
     AppComponent,
     MyStartComponent,
     MyContactComponent,
+    MyProjectComponent,
     MyHeaderComponent,
     MyFooterComponent,
     MyDatenschutzComponent,
