@@ -19,20 +19,19 @@
           <span *ngIf="!changeLanguage">{{aufzahlung.navi_deutsch}}</span>
         </a>
       </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span *ngIf="changeLanguage"><i class="fas fa-globe"></i> en</span>
+            <span *ngIf="!changeLanguage">de</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="nextCount()"><i class="fas fa-globe"></i> en</a>
+            <a class="dropdown-item" (click)="nextCount()"><i class="fas fa-globe"></i> de</a>
+          </div>
+        </li>
     </ul>
       
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span *ngIf="changeLanguage">english</span>
-          <span *ngIf="!changeLanguage">deutsch</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" (click)="nextCount()">english</a>
-          <a class="dropdown-item" (click)="nextCount()">deutsch</a>
-        </div>
-      </li>
-    </ul>
   </div>
 </nav>
 
