@@ -14,6 +14,8 @@ import { MyContactComponent } from './templates/my-contact/my-contact.component'
 import { MyProjectComponent } from './templates/my-project/my-project.component';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { PopoverModule } from 'ngx-bootstrap/popover';
+
 
 import { MyHeaderComponent } from './allways/my-header/my-header.component';
 import { MyFooterComponent } from './allways/my-footer/my-footer.component';
@@ -48,7 +50,8 @@ import { MyDisclaimerdeutschComponent } from './allways/my-footer/my-disclaimerd
     HttpClientModule ,
     BrowserModule,
     BrowserAnimationsModule,
-    ModalModule.forRoot()   
+    ModalModule.forRoot(),
+    PopoverModule.forRoot() 
   ],
   providers: [ServiceMailService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
