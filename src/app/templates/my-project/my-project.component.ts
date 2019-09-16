@@ -24,8 +24,31 @@ export class MyProjectComponent implements OnInit {
 
   changeLanguage:boolean;
 
-  html: string = `
-<span class="btn btn-danger">Never trust not sanitized HTML!!!</span>`;
+
+  htmlOne: string = `
+  <b>Aufgabe:</b><br>
+  Bestehender Auftritt - Neue Navi Elemente, Content Elemente, Suchfunktionen, UI-Funktionen<br>
+  
+  <b>Technik:</b><br>
+  Responsive (Bootstrap)<br>
+  Styling (SCSS)<br>
+  Development (jQuery)<br>
+  Template (JavaApi)<br>
+  URL (www)<br>
+  <b>Arbeitgeber</b><br>
+  Bayerische Staatsbibliothek 
+  `;
+  htmlTwo: string = `
+  <b>Aufgabe:</b><br>
+  Realaunch - neuer Onepager<br>
+
+  <b>Technik:</b><br>
+  Responsive (Bootstrap)<br>
+  Development - Bootstrap<br>
+  Styling (CSS)<br>
+  CMS (CMS Simple)<br>
+  Backendfunktionen (php)
+  `;
 
   
 

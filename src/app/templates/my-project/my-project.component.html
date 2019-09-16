@@ -7,40 +7,41 @@
     <div class="row px-4 my-5">
         
         <div class="col-md-3">
-            <div class="card">
+            <div class="card"
+                tabindex="0" type="button"
+                [popover]="deutscheBiografie"
+                popoverTitle="Frontend Development"
+                placement="right"
+                triggers="focus"
+                >
+                <ng-template #deutscheBiografie><div [innerHtml]="htmlOne"></div></ng-template>
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Content Website</span>
                   <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
-                <div class="card-body pb-2">
+                <div class="card-body">
                   <img class="img-fluid" src="../../../assets/pics/deutsche_biografie.png">
                 </div>
-                <div class="card-footer">
-                  <p class="card-text text-dark">new navigation elements - jQuery<br>
-                    new Layout elements - Bootstrap
-                  </p>
-                </div>
+
             </div>
         </div>
         <div class="col-md-3">
             <div class="card"
               tabindex="0" type="button"
-              [popover]="popTemplate"
-              popoverTitle="Dynamic html inside">
-              <ng-template #popTemplate>Here we go: <div [innerHtml]="html"></div></ng-template>
+              [popover]="onePager"
+              popoverTitle="Frontend Development"
+              placement="right"
+              triggers="focus"
+              >
+              <ng-template #onePager><div [innerHtml]="htmlTwo"></div></ng-template>
 
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Corporate Onepager</span>
                   <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
                 <div class="card-body pb-2">
                   <img class="img-fluid" src="../../../assets/pics/project_2..png">
                 </div>
-                <div class="card-footer">
-                    <p class="card-text text-dark">Responsive Screendesign - Bootstrap<br>
-                      Frontend Development - Bootstrap, jQuery
-                    </p>
-                  </div>
+
 
             </div>
-        </div>
-        <div id="ff">yxvc</div>
+        </div>        
         <div class="col-md-3">
             <div class="card">
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Style Guide</span>
