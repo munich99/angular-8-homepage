@@ -21,10 +21,12 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card"  tabindex="0"   popoverTitle="Title Popover"
-            placement="right"
-            triggers="focus"
-            popover="exempl text">
+            <div class="card"
+              tabindex="0" type="button"
+              [popover]="popTemplate"
+              popoverTitle="Dynamic html inside">
+              <ng-template #popTemplate>Here we go: <div [innerHtml]="html"></div></ng-template>
+
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Corporate Onepager</span>
                   <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
                 <div class="card-body pb-2">

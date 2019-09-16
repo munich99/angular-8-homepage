@@ -24,6 +24,9 @@ export class MyProjectComponent implements OnInit {
 
   changeLanguage:boolean;
 
+  html: string = `
+<span class="btn btn-danger">Never trust not sanitized HTML!!!</span>`;
+
   
 
   constructor(private servicelanguageservice:ServiceLanguageService) { }
