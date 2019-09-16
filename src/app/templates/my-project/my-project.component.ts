@@ -33,10 +33,10 @@ export class MyProjectComponent implements OnInit {
   Responsive (Bootstrap)<br>
   Styling (SCSS)<br>
   Development (jQuery)<br>
-  Template (JavaApi)<br>
-  URL (www)<br>
-  <b>Arbeitgeber</b><br>
-  Bayerische Staatsbibliothek 
+  Template (JavaApi)<br> 
+  <a href='https://www.deutsche-biographie.de/' target='_blank'>www.deutsche-biographie.de<br></a> 
+  <b>Arbeitgeber</b><br>  
+  <a href="https://www.bsb-muenchen.de/" target="_blank">Bayerische Staatsbibliothek</a>
   `;
   htmlTwo: string = `
   <b>Aufgabe:</b><br>
@@ -47,7 +47,10 @@ export class MyProjectComponent implements OnInit {
   Development - Bootstrap<br>
   Styling (CSS)<br>
   CMS (CMS Simple)<br>
-  Backendfunktionen (php)
+  Backendfunktionen (php)<br>
+  <a href="http://edithion.de" target="_blank">www.edithion.de<br></a>
+  <b>Auftrag:</b><br>
+  Modeatelier Edith Grüninger 
   `;
 
   

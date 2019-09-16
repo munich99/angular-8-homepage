@@ -11,8 +11,8 @@
                 tabindex="0" type="button"
                 [popover]="deutscheBiografie"
                 popoverTitle="Frontend Development"
-                placement="right"
-                triggers="focus"
+                placement="right"                
+                [outsideClick]="true"
                 >
                 <ng-template #deutscheBiografie><div [innerHtml]="htmlOne"></div></ng-template>
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Content Website</span>
@@ -20,7 +20,6 @@
                 <div class="card-body">
                   <img class="img-fluid" src="../../../assets/pics/deutsche_biografie.png">
                 </div>
-
             </div>
         </div>
         <div class="col-md-3">
@@ -28,21 +27,21 @@
               tabindex="0" type="button"
               [popover]="onePager"
               popoverTitle="Frontend Development"
-              placement="right"
-              triggers="focus"
+              placement="right"              
+              [outsideClick]="true"
               >
-              <ng-template #onePager><div [innerHtml]="htmlTwo"></div></ng-template>
+              <ng-template #onePager><div [innerHtml]="htmlTwo" ></div></ng-template>
 
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Corporate Onepager</span>
                   <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
-                <div class="card-body pb-2">
+                <div class="card-body">
                   <img class="img-fluid" src="../../../assets/pics/project_2..png">
                 </div>
 
 
             </div>
         </div>        
-        <div class="col-md-3">
+        <!--div class="col-md-3">
             <div class="card">
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Style Guide</span>
                   <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
@@ -50,7 +49,7 @@
                   <img class="img-fluid" src="../../../assets/pics/deutsche_biografie.png">
                 </div>
             </div>
-        </div>
+        </div-->
 
         
         
