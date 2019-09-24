@@ -3,25 +3,22 @@
     <span @fadeIn *ngIf="changeLanguage">HELLO.</span><span @fadeIn *ngIf="!changeLanguage">HALLO.</span>
   </h1>    
   <h1 class="pl-2 text-lg-right">
-    <span @fadeIn *ngIf="changeLanguage">I'M</span><span @fadeIn *ngIf="!changeLanguage">ICH BIN</span><span @fadeIn> SEBASTIAN SAWICZ</span>
+    <span @fadeIn *ngIf="changeLanguage">I'M</span><span @fadeIn *ngIf="!changeLanguage">ICH BIN</span><br><span @fadeIn>SEBASTIAN<br>SAWICZ</span>
   </h1>
 
-  <div class="row my-3">
-    <div class="col-12 col-lg-6">
+  <div class="row my-4">
+    <div class="col-12">
         <h2 class="pl-1 pl-md-3"> 
-            <span @fadeIn *ngIf="changeLanguage">I'm a multi-talented developer. Most of my time i design and build digital products. You can also call me a web designer, frontend, interaction, UI, UX or by any other market defined function-title.
-                I'm also a multi-disciplinary maker with over 15 years of experiences in wide range of design disciplines, front-end developer, illustrator, traveler, decorator and more.</span>
-                <span @fadeIn *ngIf="!changeLanguage">Ich bin ein vielseitig-kreativer Mensch.
-                Die meiste Zeit verbringe ich mit grafischem Gestalten und digitaler Produktion.
-                Sie können mich auch als Webdesinger, Layouter, Programmierer und Gestalter nutzerorientierter Interaktionen, UI, UX nennen oder sonstiger marküblicher Funktionstiteln dafür benutzen.
-                Ich bin einfach ein interdisziplinärer Kreativer, mit über 15 Jahren Erfahrung in den weiten Gebieten des Designs; FrontEnd-Entwickler, Illustrator, Weltenbummler, Verschönerer und noch viel mehr.</span>
+            <span @fadeIn *ngIf="changeLanguage">I'm a multi-talented Web Designer.
+                I'm also a maker and thinker with over 15 years of experience in front-end development, UX/UI design and vector illustration.</span>
+                <span @fadeIn *ngIf="! changeLanguage">Ich bin ein pragmatischer, erfahrener und styleverliebter Webdesigner.
+                  Seit 2012 bin verstärkt in Disziplinen der Frontend Entwicklung und UX/UI Designs zuhause.
+                </span>
         </h2>
     </div>
-
-    <div class="d-none d-xl-block col-xl-2"></div>
-
-    <div class="col-12 col-lg-6 col-xl-4">
-        <img style="width:100%; height: auto" src="../../../assets/pics/ich-dev3.png"/>
+    
+    <div class="col-12">
+        <img class="img-fluid" src="../../../assets/pics/ich-dev3.png"/>
     </div>
   </div>
 

@@ -1,7 +1,11 @@
 <section style="margin-top: 1em; margin-bottom: 1em;">
+    <h1  class="mx-2">
+        <span *ngIf="changeLanguage" @fadeIn >PROJECTS.</span>
+        <span *ngIf="!changeLanguage" @fadeIn >PROJEKTE.</span>
+    </h1>
     <h1  class="text-right mx-2">
-        <span *ngIf="changeLanguage" @fadeIn >PROJECT</span>
-        <span *ngIf="!changeLanguage" @fadeIn >PROJEKT</span>
+        <span *ngIf="changeLanguage" @fadeIn >ALSO TEAM</span>
+        <span *ngIf="!changeLanguage" @fadeIn >AUCH IM TEAM</span>
     </h1>
 
     <div class="row px-4 my-5">
@@ -16,7 +20,7 @@
                 >
                 <ng-template #deutscheBiografie><div [innerHtml]="htmlOne"></div></ng-template>
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Content Website</span>
-                  <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
+                  <span @fadeIn *ngIf="!changeLanguage">Content Website</span></h5>
                 <div class="card-body">
                   <img class="img-fluid" src="../../../assets/pics/deutsche_biografie.png">
                 </div>
@@ -33,7 +37,7 @@
               <ng-template #onePager><div [innerHtml]="htmlTwo" ></div></ng-template>
 
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Corporate Onepager</span>
-                  <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
+                  <span @fadeIn *ngIf="!changeLanguage">Corporate Onepager</span></h5>
                 <div class="card-body">
                   <img class="img-fluid" src="../../../assets/pics/project_2..png">
                 </div>

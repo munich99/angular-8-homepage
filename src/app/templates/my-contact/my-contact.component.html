@@ -1,14 +1,20 @@
 <section style="margin-top: 1em; margin-bottom: 1em;">
+
+
+    <h1  class="mx-2">
+        <span @fadeIn *ngIf="changeLanguage">CONTACT.</span>
+        <span @fadeIn *ngIf="!changeLanguage">KONTAKT.</span>
+    </h1>
     <h1  class="text-right mx-2">
-        <span @fadeIn *ngIf="changeLanguage">CONTACT</span>
-        <span @fadeIn *ngIf="!changeLanguage">KONTAKT</span>
+        <span @fadeIn *ngIf="changeLanguage">WELCOME</span>
+        <span @fadeIn *ngIf="!changeLanguage">SEHR GERNE</span>       
     </h1>
 
                 <div class="row">
                     <div class="col-md-6 px-2 px-lg-3 my-5">
                         <div class="card">
                             <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Get in Touch</span>
-                                <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
+                                <span @fadeIn *ngIf="!changeLanguage">Der erste Schritt zu Ihrem digitalem Erfolg :)</span></h5>
                             <div class="card-body">
                                 <form class="contact__form" (submit)="contactUser($event)">
                                     
@@ -50,11 +56,6 @@
                         </div>
                     </div>
                 </div>
-         
-
-        
- 
-   
 </section>
 
 

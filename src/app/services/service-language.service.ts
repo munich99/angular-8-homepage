@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 
 export class ServiceLanguageService {
-  counter= true;
+  counter= false;
   changeLanguage: BehaviorSubject<boolean>; 
 
   constructor() { 

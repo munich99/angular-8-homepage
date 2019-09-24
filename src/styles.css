@@ -1,5 +1,8 @@
 /* global */
 
+h1 {font-size:12vw; line-height: 85%; font-weight: bold;}
+h2 {font-size:8vw; line-height: 115%; margin-top: -1vh!important}
+
 body {
     background-color: #333; color: rgb(250, 167, 73);
     overflow-x: hidden;
