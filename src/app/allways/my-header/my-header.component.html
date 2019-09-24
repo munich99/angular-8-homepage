@@ -14,7 +14,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li *ngFor="let aufzahlung of navigation" class="nav-item">
-        <a class="nav-link pl-0" routerLinkActive="active" routerLink="{{aufzahlung.ziel}}">
+        <a class="nav-link pl-0 mr-3" routerLinkActive="active" routerLink="{{aufzahlung.ziel}}">
           <span *ngIf="changeLanguage">{{aufzahlung.navi}}</span>
           <span *ngIf="!changeLanguage">{{aufzahlung.navi_deutsch}}</span>
         </a>
