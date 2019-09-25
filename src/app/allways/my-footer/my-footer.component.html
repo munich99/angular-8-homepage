@@ -1,6 +1,6 @@
 <footer class="p-3 bg-dark text-white-50">
   <h5 class="text-secondary text-md-center text-lg-left">Sitemap</h5>
-    <div class="row">
+    <div class="row pb-0">
       
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav">
           <li *ngFor="let aufzahlung of navigation">
@@ -11,7 +11,7 @@
           </li>
       </ul>
 
-      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-center text-lg-left">
+      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-center text-lg-left d-none d-lg-block">
           <li *ngFor="let aufzahlung of sitemap">&nbsp;
               <!--a href="#" class="list-group-item list-group-item-action disabled pl-3">
                   <span *ngIf="changeLanguage">{{aufzahlung.site}}</span>
@@ -28,11 +28,8 @@
               </a>
           </li>
       </ul>
-
-
-
   </div>
-<br>
+
  
 
 
