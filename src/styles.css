@@ -1,7 +1,14 @@
 /* global */
 
-h1 {font-size:12vw; line-height: 85%; font-weight: bold;}
-h2 {font-size:8vw; line-height: 115%; margin-top: -1vh!important}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+h1 {line-height: 85%;}
+h2 {margin-top: -1vh!important}
+
+}
+
+h1 {font-size:12vw; font-weight: bold;}
+h2 {font-size:8vw;}
 
 body {
     background-color: #333; color: rgb(250, 167, 73);
