@@ -1,13 +1,13 @@
 export const navigation=[
     {
         navi: "about me",
-        navi_deutsch: "Das bin ich",
+        navi_deutsch: "Über mich",
         ziel: "start",
         id: 1
       },
       {
         navi: "contact",
-        navi_deutsch: "Schreibe mir",
+        navi_deutsch: "Kontakt",
         ziel: "contact",
         id: 2
       },
