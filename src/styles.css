@@ -1,5 +1,8 @@
 /* global */
 
+.text-secondary {
+    color: #333!important
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 h1 {line-height: 85%;}
