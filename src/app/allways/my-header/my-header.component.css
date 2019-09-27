@@ -30,6 +30,63 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+#teaser {
+    width: 18vw;
+    height: 18vw;
+    right:0;
+    top:0; 
+}
+
+#teaser::before,
+#teaser::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+
+#teaser::before {
+    border-width: 9vw;
+    border-right-color: #49497f;
+    border-top-color: #49497f;  
+}
+
+#teaser::after {    
+    border-width: 6vw;
+    border-right-color: #333;
+    border-top-color: #333;
+}
+
+
+
+#teaser-word {
+    position: absolute;  
+/*  background-color: #49497f   */   
+    transform: rotate(45deg);     
+    height: 2vw;     
+    width: 19vw;
+    top: 7vw;
+    left:1vw;
+    text-align: center;
+    font-size: 1.5vw; /*hat keinen Einfluss */    
+    margin-top: -0.6vw;    
+}
+
+
+
+#teaser img{
+    height: 2.2vw;
+    width: auto; 
+    vertical-align: middle;   
+}
+
+
+
+/*
+
 .teaser {    
     width: 500px; height: 500px;    
     top: -300px; right: -300px;
@@ -55,5 +112,7 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
     -webkit-box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.75);
 }
+
+*/
 
   
