@@ -54,9 +54,9 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
 
 
 #teaser::before {
-    border-width: 9vw;
-    border-right-color: #49497f;
-    border-top-color: #49497f;  
+    border-width: 9vw; 
+    border-right-color: #545469;/*#676880*/
+    border-top-color: #545469;
 }
 
 #teaser::after {    
@@ -68,6 +68,7 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
 
 
 #teaser-word {
+    opacity: 0.8;
     transform: rotate(45deg);     
     height: 2vw;     
     width: 19vw;

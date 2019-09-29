@@ -11,7 +11,12 @@ h2 {margin-top: -1vh!important}
 }
 
 h1 {font-size:12vw; font-weight: bold;}
-h2 {font-size:8vw;}
+h2 {font-size:4.6vw; font-weight: bold; color:#676880}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {   
+h2 {font-size:7.4vw;}
+}
 
 body {
     background-color: #333; color: rgb(250, 167, 73);
