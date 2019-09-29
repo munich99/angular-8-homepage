@@ -38,9 +38,14 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
 }
 
 #teaser::before,
+#teaser::after,
+#teaser-word
+ {position: absolute;}
+
+
+#teaser::before,
 #teaser::after {
-    content: '';
-    position: absolute;
+    content: '';    
     top: 0;
     right: 0;
     border-color: transparent;
@@ -63,8 +68,6 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
 
 
 #teaser-word {
-    position: absolute;  
-/*  background-color: #49497f   */   
     transform: rotate(45deg);     
     height: 2vw;     
     width: 19vw;
@@ -83,36 +86,18 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
     vertical-align: middle;   
 }
 
-
-
-/*
-
-.teaser {    
-    width: 500px; height: 500px;    
-    top: -300px; right: -300px;
-    z-index: 999;
-
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
+#shadow3 {
+    position: absolute;
+    top: 0; right: 0;
+    width: 20vw;
+    height: 20vw;
 }
 
-.teaser img {   
-    height: 35px; width: auto; margin-left: 15px  
+#shadow3 {
+background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 55%);
+background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 55%);
+background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 55%);
+
 }
-
-.teaser p {
-    color: #fff;
-    background-color: #49497f; 
-    display:inline-block;     
-    bottom: 0; left:0;right:0;
-    padding: 10px;
-
-    box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.75);
-}
-
-*/
 
   
