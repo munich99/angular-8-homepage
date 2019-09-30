@@ -1,8 +1,10 @@
-<footer class="p-3 bg-dark text-white-50">
-  <h5 class="text-secondary text-md-center text-lg-left">Sitemap</h5>
-    <div class="row pb-0">
+<footer class="p-3 bg-dark text-white-50">  
+    <div class="row pb-0">      
       
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav">
+          <li>
+            <h5 class="list-group-item disabled pl-3">Sitemap</h5>
+          </li>
           <li *ngFor="let aufzahlung of navigation">
               <a class="list-group-item list-group-item-action pl-3" routerLink="{{aufzahlung.ziel}}">
                   <span *ngIf="changeLanguage">{{aufzahlung.navi}}</span>
@@ -12,6 +14,7 @@
       </ul>
 
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-center text-lg-left d-none d-lg-block">
+
           <li *ngFor="let aufzahlung of sitemap">&nbsp;
               <!--a href="#" class="list-group-item list-group-item-action disabled pl-3">
                   <span *ngIf="changeLanguage">{{aufzahlung.site}}</span>
@@ -21,6 +24,12 @@
       </ul>
 
       <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-right text-lg-left">
+          <li>
+              <h5 class="list-group-item disabled pl-3">
+                  <span *ngIf="!changeLanguage">Rechtliches</span>
+                  <span *ngIf="changeLanguage">Law</span>
+              </h5>
+          </li>
           <li *ngFor="let aufzahlung of law">
               <a href="#" class="list-group-item list-group-item-action pl-3">
                   <span *ngIf="changeLanguage" (click)="openModal(template, aufzahlung)">{{aufzahlung.rechtliches}}</span>
