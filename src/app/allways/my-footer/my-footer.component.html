@@ -1,7 +1,7 @@
 <footer class="p-3 bg-dark text-white-50">  
     <div class="row pb-0">      
       
-      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav">
+      <ul class="list-group col-12 col-md-4 col-lg-3 list-unstyled">
           <li>
             <h5 class="list-group-item disabled pl-3">Sitemap</h5>
           </li>
@@ -13,17 +13,36 @@
           </li>
       </ul>
 
-      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-center text-lg-left d-none d-lg-block">
+      <!--ul class="list-group col-12 col-md-4 col-lg-5 navbar-nav text-md-center text-lg-left d-inline-block">
+        
+        <li>
+          <h5 class="list-group-item disabled pl-3">Open Source</h5>
+        </li>
+        <li>
+          <a href="https://github.com/munich99" class="list-group-item" target="_blank"><i class="fab fa-github fa-3x" aria-hidden="true"></i><br>GitHub</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/munich99" class="list-group-item" target="_blank"><i class="fab fa-codepen fa-3x" aria-hidden="true"></i><br>CodePen</a>
+        </li>
+      </ul-->
 
-          <li *ngFor="let aufzahlung of sitemap">&nbsp;
-              <!--a href="#" class="list-group-item list-group-item-action disabled pl-3">
-                  <span *ngIf="changeLanguage">{{aufzahlung.site}}</span>
-                  <span *ngIf="!changeLanguage">{{aufzahlung.site_de}}</span>
-              </a-->
+      <ul class="list-group list-group-horizontal col-lg-5 d-inline-block list-unstyled">
+          <li>
+              <h5 class="list-group-item disabled pl-3">Open Source and Social</h5>
+            </li>
+
+          <li class="list-group-item text-center">
+              <a href="https://github.com/munich99" class="list-group-item pl-0" target="social"><i class="fab fa-github fa-3x" aria-hidden="true"></i><br>GitHub</a>
           </li>
-      </ul>
+          <li class="list-group-item  text-center">
+              <a href="https://codepen.io/munich99" class="list-group-item pl-0" target="social"><i class="fab fa-codepen fa-3x" aria-hidden="true"></i><br>CodePen</a>
+          </li>
+          <li class="list-group-item  text-center">
+              <a href="https://www.xing.com/profile/Sebastian_Sawicz" class="list-group-item pl-0" target="social"><i class="fab fa-xing fa-3x" aria-hidden="true"></i><br>Xing</a>
+          </li>
+        </ul>
 
-      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 navbar-nav text-md-right text-lg-left">
+      <ul class="list-group col-12 col-md-4 col-lg-3 col-xl-4 list-unstyled text-md-right text-lg-left">
           <li>
               <h5 class="list-group-item disabled pl-3">
                   <span *ngIf="!changeLanguage">Rechtliches</span>
@@ -38,9 +57,6 @@
           </li>
       </ul>
   </div>
-
- 
-
 
 <ng-template #template>
   <div class="modal-header">
@@ -65,4 +81,10 @@
   <div class="container text-center">
     <small>Copyright &copy; Sebastian Sawicz</small>
   </div>
+
+  
+    
+
+
+
 </footer>
