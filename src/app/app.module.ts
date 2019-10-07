@@ -12,6 +12,7 @@ import { ServiceMailService } from './services/service-mail.service';
 import { MyStartComponent } from './templates/my-start/my-start.component';
 import { MyContactComponent } from './templates/my-contact/my-contact.component';
 import { MyProjectComponent } from './templates/my-project/my-project.component';
+import { MySkillsComponent } from './templates/my-skills/my-skills.component';
 
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { PopoverModule } from 'ngx-bootstrap/popover';
@@ -42,7 +43,8 @@ import { MyDisclaimerdeutschComponent } from './allways/my-footer/my-disclaimerd
     MyDatenschutzdeutschComponent,
     MyImpressumComponent,
     MyDisclaimerComponent,
-    MyDisclaimerdeutschComponent
+    MyDisclaimerdeutschComponent,
+    MySkillsComponent
   ],
   imports: [
     BrowserModule,

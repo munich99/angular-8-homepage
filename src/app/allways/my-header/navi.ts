@@ -16,6 +16,12 @@ export const navigation=[
         navi_deutsch: "Projekte",
         ziel: "project",
         id: 3
+      },
+      {
+        navi: "skills",
+        navi_deutsch: "Web Techniken",
+        ziel: "skills",
+        id: 3
       }
        
   ]
