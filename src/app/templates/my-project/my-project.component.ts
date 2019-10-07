@@ -52,6 +52,19 @@ export class MyProjectComponent implements OnInit {
   <b>Auftrag:</b><br>
   Modeatelier Edith Grüninger 
   `;
+  htmlThree: string = `
+  <b>Aufgabe:</b><br>
+  Beim erster Scroll-Bewegung verkleinert sich das Logo, wandert von der Screenmitte in die Navigation<br>
+
+  <b>Technik:</b><br>
+  CSS - Transition<br>
+  JavaScript Native<br>
+  Responsive (Bootstrap)<br>
+  <a href="http://web600.serverdrome.eu/nav-logo_transformation/" target="_blank">www.web600.serverdrome.eu<br></a>
+  <b>Auftrag:</b><br>
+  <a href="https://diana-richter.com/" target="_blank">Diana Richter Grafik-Design</a>
+  
+  `;
 
   
 

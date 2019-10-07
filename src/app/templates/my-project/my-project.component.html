@@ -40,25 +40,34 @@
                 <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Corporate Onepager</span>
                   <span @fadeIn *ngIf="!changeLanguage">Corporate Onepager</span></h5>
                 <div class="card-body">
-                  <img class="img-fluid" src="../../../assets/pics/project_2..png">
+                  <img class="img-fluid" src="../../../assets/pics/project_2.png">
                 </div>
 
 
             </div>
         </div>        
-        <!--div class="col-md-3">
-            <div class="card">
-                <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Style Guide</span>
-                  <span @fadeIn *ngIf="!changeLanguage">Freue mich von Ihnen zu hören :)</span></h5>
-                <div class="card-body">
-                  <img class="img-fluid" src="../../../assets/pics/deutsche_biografie.png">
-                </div>
-            </div>
-        </div-->
+    <!-- drittes Beispiel -->
+        <div class="col-md-3 mb-3">
+            <div class="card"
+              tabindex="0"
+              [popover]="scrollEffect"
+              popoverTitle="Logo Animation"
+              placement="right"              
+              [outsideClick]="true"
+              >
+              <ng-template #scrollEffect><div [innerHtml]="htmlThree" ></div></ng-template>
 
+                <h5 class="card-header"><span @fadeIn *ngIf="changeLanguage">Scroll Effect</span>
+                  <span @fadeIn *ngIf="!changeLanguage">Scroll Effekt</span></h5>
+                <div class="card-body">
+                  <img class="img-fluid" src="../../../assets/pics/project_3.png">
+                </div>
+
+
+            </div>
+        </div>   
         
-        
-        <div class="col-md-1 text-center">
+        <!--div class="col-md-1 text-center">
             <p>HTML<br><i class="fab fa-html5 fa-3x"></i></p>
             <p>CSS<br><i class="fab fa-css3  fa-3x"></i></p> 
             <img class="w-25 d-md-none mb-4 mt-2" style="opacity: 0.5" src="../../../assets/pics/logo-jquery_2x.png">
@@ -71,7 +80,7 @@
             <p><i class="fab fa-github fa-3x"></i><br>GitHub</p>
             <p class="position-relative"><i class="fas fa-users-cog fa-3x"></i><br>UX Design</p>
             <p><i class="fab fa-wordpress fa-3x"></i><br>Wordpress</p>
-        </div>
+        </div-->
     </div>
 </section>
 
