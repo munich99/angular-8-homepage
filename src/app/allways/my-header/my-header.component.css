@@ -100,4 +100,35 @@ a:hover { color:  rgba(250, 167, 73, 0.5) }
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 55%);
 }
 
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    #teaser {
+        width: 32vw;
+        height: 32vw;
+    }
+
+    #teaser::before {
+        border-width: 18vw; 
+    }
+
+    #teaser::after {    
+        border-width: 11vw;
+    }
+
+    #teaser-word {   
+        height: 3vw;
+        width: 35vw;
+        top: 14vw;
+        left: 1vw;      
+        font-size: 3vw;
+    }
+
+    #teaser img{
+        height: 4.5vw;
+    }
+}
   
