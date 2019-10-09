@@ -1,5 +1,9 @@
 /* .list-group-item {background-color: transparent} */
 
+.list-group-item.active {
+    color: rgb(255, 255, 0)!important;
+}
+
 footer {
     background-color:#faa749!important;
 }
