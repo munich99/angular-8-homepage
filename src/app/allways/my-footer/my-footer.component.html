@@ -6,25 +6,12 @@
             <h5 class="list-group-item disabled pl-3">Sitemap</h5>
           </li>
           <li *ngFor="let aufzahlung of navigation">
-              <a class="list-group-item list-group-item-action pl-3" routerLink="{{aufzahlung.ziel}}">
+            <a class="list-group-item list-group-item-action pl-3" routerLinkActive="active" routerLink="{{aufzahlung.ziel}}">
                   <span *ngIf="changeLanguage">{{aufzahlung.navi}}</span>
                   <span *ngIf="!changeLanguage">{{aufzahlung.navi_deutsch}}</span>
               </a>
           </li>
       </ul>
-
-      <!--ul class="list-group col-12 col-md-4 col-lg-5 navbar-nav text-md-center text-lg-left d-inline-block">
-        
-        <li>
-          <h5 class="list-group-item disabled pl-3">Open Source</h5>
-        </li>
-        <li>
-          <a href="https://github.com/munich99" class="list-group-item" target="_blank"><i class="fab fa-github fa-3x" aria-hidden="true"></i><br>GitHub</a>
-        </li>
-        <li>
-          <a href="https://codepen.io/munich99" class="list-group-item" target="_blank"><i class="fab fa-codepen fa-3x" aria-hidden="true"></i><br>CodePen</a>
-        </li>
-      </ul-->
 
       <ul class="list-group list-group-horizontal col-lg-5 d-inline-block list-unstyled">
           <li>

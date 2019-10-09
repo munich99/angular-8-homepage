@@ -10,6 +10,11 @@ footer {
     display: inline-block
 }
 
+.list-group-item.active {
+    color:rgba(84, 84, 105, 0.48);
+}
+
+
 .list-group-item:hover {
 
     color: rgba(255, 255, 255, 0.7);
