@@ -3,19 +3,29 @@
 .text-secondary {
     color: #333!important
 }
+
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 h1 {line-height: 85%;}
 h2 {margin-top: -1vh!important}
-
 }
 
+body {font-size:0.67vw;}
 h1 {font-size:12vw; font-weight: bold;}
 h2 {font-size:4.6vw; font-weight: bold; color:#676880}
+h3 {font-size:1.75vw; letter-spacing: 0.015vw;}
+h5 {font-size:1.08vw;}
+
+@media (min-width: 768px) {
+h3 {font-size:2rem;}
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {   
 h2 {font-size:7.4vw;}
+h3 {font-size:1.2rem;}
 }
 
 body {
